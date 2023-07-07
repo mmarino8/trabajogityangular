@@ -1,1 +1,16 @@
-<p>additem works!</p>
+<form action="" (ngSubmit)="onSubmit">
+    <h2>Registra un nuevo articulo</h2>
+    <div>
+        <label for="">Id del articulo</label>
+        <input type="text" name="id" id=""[(ngModel)]="id">
+    </div>
+    <div>
+        <label for="">Precio</label>
+        <input type="text" name="price" id=""[(ngModel)]="price">
+    </div>
+    <div>
+        <label for="">Cantidad</label>
+        <input type="text" name="quantity" id=""[(ngModel)]="quantity">
+    </div>
+    <input type="submit" value="crear">
+</form>
